@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Authentic meat</title>
+</head>
+
+<body>
+  <div class="jumbotron">
+    <div class="container text-center">
+      <h1>Authentic meat</h1>      
+      <p>boost your protein</p>
+    </div>
+  </div>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <!-- Brand -->
+    <a class="navbar-brand" href="#">
+      <img src="./assets/imgs/authentic meat app/logo/meat-1.jpg" alt="logo" width="100px" height="100px"
+        class="rounded-circle">
+    </a>
+
+    <!-- Links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/home"><i class="fas fa-home"></i>home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/chicken"><i class="fas fa-drumstick-bite"></i>Chicken</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/mutton"><i class="fas fa-pig"></i>Mutton</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/fish"><i class="fas fa-fish"></i>Fish & Seafood</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/eggs"><i class="fas fa-egg"></i>Eggs</a>
+      </li>
+      <!-- Dropdown -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" routerLink="/combos" id="navbardrop" data-toggle="dropdown">
+          Combos
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" routerLink="/combos/combos1">Chicken & Mutton</a>
+          <a class="dropdown-item" routerLink="/combos/combos2">Fish & Prawns</a>
+          <a class="dropdown-item" routerLink="/combos/combos3">Eggs & spices </a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/chart" data-toggle="modal" data-target="#myModal"><i class="fas fa-shopping-cart"></i>cart</a>
+      </li>>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/login"><i class="fas fa-sign-in-alt"></i>sign-in</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/signup"><i class="fas fa-user-plus"></i>sign-up</a>
+      </li>
+    </ul>
+    <div class="search-container">
+      <form action="/action_page.php">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><i class="fas fa-search"></i></button>
+      </form>
+    </div>
+
+  </nav>
+  <br>
+  <router-outlet></router-outlet>
+</body>
+<app-footer></app-footer>
+
+</html>
